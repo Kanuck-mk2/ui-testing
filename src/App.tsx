@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='max-h-screen max-w-full flex-row items-center justify-center m-11'>
       <Text content="Hello World, This is My UI playground :)" />
       <Text content="Check it out!" />
       <Card />
@@ -52,7 +53,9 @@ function App() {
       <p>Hello</p>
 
 
-      <Meteors  className='max-h-screen max-w-full'/>
+      <Meteors  className='mr-10 items-center justify-stretch' number={100}/>
+      </div>
+      
     </>
   );
 }

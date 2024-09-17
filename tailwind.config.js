@@ -25,7 +25,7 @@ module.exports = {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
           "100%": {
-            transform: "rotate(215deg) translateX(-500px)",
+            transform: "rotate(215deg) translateX(-700px)",
             opacity: "0",
           },
         },
