@@ -23,7 +23,7 @@ export const VaultCard = ({
   const [randomString, setRandomString] = useState('');
 
   useEffect(() => {
-    const str = generateRandomString(1500);
+    const str = generateRandomString(1550);
     setRandomString(str);
   }, []);
 
@@ -32,7 +32,8 @@ export const VaultCard = ({
     if (!currentTarget) return;
     const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
+    mouseY.set(clientY - top); //Mouse movement variables
+    
 
     const str = generateRandomString(1500);
     setRandomString(str);

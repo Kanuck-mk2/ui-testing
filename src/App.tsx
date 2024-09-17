@@ -2,6 +2,7 @@ import { AuroraBackground } from './components/AuroraBackground';
 import { BackgroundGradientAnimation } from './components/BackgroundGradientAnimation';
 import Button from './components/Button';
 import Card from './components/Card/Card';
+import { Meteors } from './components/Meteors';
 import Navbar from './components/Navbar/Navbar';
 import Shapes from './components/Shapes';
 import SlideButton from './components/SlideButton';
@@ -18,7 +19,7 @@ function App() {
       <Card />
       <Shapes />
       <SlideButton />
-      <AuroraBackground  children="Hello"/>
+      <AuroraBackground children="Hello World" />
       <WavyBackground
         numberOfWaves={10} // Set the number of waves to 10
         colors={[
@@ -47,6 +48,11 @@ function App() {
       </div>
 
       <BackgroundGradientAnimation />
+
+      <p>Hello</p>
+
+
+      <Meteors  className='max-h-screen max-w-full'/>
     </>
   );
 }

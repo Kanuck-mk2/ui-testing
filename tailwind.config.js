@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        "meteor-effect": "meteor 5s linear infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
@@ -20,6 +21,14 @@ module.exports = {
         aurora: 'aurora 60s linear infinite', // Moved aurora animation here
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
         moveHorizontal: {
           "0%": {
             transform: "translateX(-50%) translateY(-10%)",
@@ -53,7 +62,7 @@ module.exports = {
             transform: "translateY(-50%)",
           },
         },
-        aurora: { // Moved aurora keyframes here
+        aurora: { // Merged aurora keyframes here
           from: {
             backgroundPosition: '50% 50%, 50% 50%',
           },
