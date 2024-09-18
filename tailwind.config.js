@@ -22,10 +22,10 @@ module.exports = {
       },
       keyframes: {
         meteor: {
-          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "0%": { transform: "rotate(200deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
           "100%": {
-            transform: "rotate(215deg) translateX(-700px)",
+            transform: "rotate(270deg) translateX(-700px)",
             opacity: "0",
           },
         },
@@ -73,7 +73,7 @@ module.exports = {
       },
       fontFamily: {
         nunito: ['nunito sans'],
-        wix: ['wix madefor tex'],
+        wix: ['wix'],
         poppins: ['Poppins'],
       },
     },
