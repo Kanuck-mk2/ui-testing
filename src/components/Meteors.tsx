@@ -19,10 +19,10 @@ export const Meteors = ({
             className
           )}
           style={{
-            top: 0,
-            left: Math.floor(Math.random() * (600 - -400) + -500) + "px",
-            animationDelay: Math.random() * (0.7 - 0.8) + 0.2 + "s",
-            animationDuration: Math.floor(Math.random() * (80 - 2) + 2) + "s",
+            top: 4,
+            left: Math.floor(Math.random() * (6000 - 40) + 50) + "px",
+            animationDelay: Math.random() * (0.9 - 0.1) + 0.4 + "s",
+            animationDuration: Math.floor(Math.random() * (90 - 9) + 5) + "s",
           }}
         ></span>
       ))}
