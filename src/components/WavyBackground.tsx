@@ -86,7 +86,7 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
         ctx.lineWidth = waveWidth || 50;
         ctx.strokeStyle = waveColors[i % waveColors.length];
         for (x = 0; x < w; x += 5) {
-          const y = noise(x / 800, 0.3 * i, nt) * 100;
+          const y = noise(x / 300, 1.3 * i, nt) * 120;
           ctx.lineTo(x, y + h * 0.5);
         }
         ctx.stroke();
@@ -98,7 +98,7 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
   let animationId: number;
   const render = () => {
     if (ctx) {
-      ctx.fillStyle = backgroundFill || 'black';
+      ctx.fillStyle = backgroundFill || 'blue';
       ctx.globalAlpha = waveOpacity || 0.5;
       ctx.fillRect(0, 0, w, h);
       drawWave(numberOfWaves); // Use numberOfWaves here
